@@ -36,6 +36,8 @@ jobs:
         uses: actions/checkout@v7
         with:
           persist-credentials: false
+          sparse-checkout: |
+            .github
       - name: Check actions
         uses: apache/infrastructure-actions/allowlist-check@allowlist-check/v1
         with:
